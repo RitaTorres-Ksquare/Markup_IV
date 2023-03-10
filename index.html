@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble-Chat</title>
+    <style>
+      body {
+        padding: 10px;
+        width: 800px;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+          "chat1 vacio2"
+          "vacio1 chat2";
+      }
+      .chat1 {
+        width: 80%;
+      }
+
+      .chat2 {
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 18%;
+      }
+      .chat11 {
+        display: flex;
+        margin-bottom: 10px;
+      }
+      .chat22 {
+        margin-top: 10px;
+      }
+
+      .chat {
+        background-color: #d3e1d5;
+        border-radius: 10px;
+        padding: 10px;
+      }
+
+      .chat2 .chat {
+        background-color: rgb(216, 216, 231);
+      }
+
+      .chat2 .chat .horaI {
+        background-color: rgb(216, 216, 231);
+      }
+
+      .img1 {
+        border-radius: 100%;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;
+      }
+
+      .chat p {
+        margin: 0 10px 0 0;
+        padding: 0%;
+      }
+
+      .hora1 {
+        display: flex;
+        justify-content: flex-end;
+        padding: 4px;
+        height: 16px;
+      }
+      .hora1 p {
+        color: grey;
+      }
+
+      .horaI {
+        width: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="chat1">
+        <section class="chat11">
+          <img
+            class="img1"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/FIDE_World_FR_Chess_Championship_2019_-_Magnus_Carlsen_%28cropped1%29.jpg/800px-FIDE_World_FR_Chess_Championship_2019_-_Magnus_Carlsen_%28cropped1%29.jpg"
+            width="50px"
+          />
+          <section class="chat">
+            <section class="texto">
+              <p>Hi Den, Not yet. I am waiting for</p>
+              <p>Angela's report</p>
+            </section>
+            <section class="hora1">
+              <p>11:34 AM</p>
+              <img class="horaI" src="doble.png" />
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <section class="vacio1"></section>
+      <section class="vacio2"></section>
+
+      <section class="chat2">
+        <section class="chat22">
+          <section class="chat">
+            <section class="texto">
+              <p>Ok! Angela, when should we wait for</p>
+              <p>your report?</p>
+            </section>
+
+            <section class="hora1">
+              <p>11:29 AM</p>
+              <img class="horaI" src="una.png" />
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
